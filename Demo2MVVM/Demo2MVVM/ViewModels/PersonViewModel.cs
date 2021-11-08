@@ -92,6 +92,7 @@ namespace Demo2MVVM.ViewModels
 
             Save = new Command(() =>
             {
+                FullName = string.Concat(FirstName, " ", FirstLastName, " ", SecondLastName);
                 //Business logic=>Ins Database
                 //Business logic=>Call API
             });

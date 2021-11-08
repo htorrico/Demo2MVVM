@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo2MVVM.Views.PersonInsert">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout >
+                <Label Text="FirstName"/>
+                <Editor Text="{Binding FirstName}" ></Editor>
+                <Label Text="FirstLastName"/>
+                <Editor Text="{Binding FirstLastName}" ></Editor>
+                <Label Text="SecondLastName"/>
+                <Editor Text="{Binding SecondLastName}" ></Editor>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Save"  Command="{Binding Save}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding FullName}"
+                       />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

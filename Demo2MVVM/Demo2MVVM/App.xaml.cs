@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo2MVVM.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace Demo2MVVM
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new PersonInsert();
         }
 
         protected override void OnStart()
